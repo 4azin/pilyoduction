@@ -145,13 +145,14 @@ export default function App() {
           <div className="hero-copy">
             <div className="badge">
               <Sparkles size={16} />
-              piryoduction, 소규모 프로덕션을 위한 AI 제작 PM
+              piryoduction AI 제작 PM
             </div>
 
             <h1>
-              프로젝트 조건만 입력하면,
-              <br />
-              제작 로드맵부터 일정까지.
+              <span>프로젝트 조건만</span>
+              <span>입력하면,</span>
+              <span>제작 로드맵부터</span>
+              <span>일정까지.</span>
             </h1>
 
             <p className="hero-desc">

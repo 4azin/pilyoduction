@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
     sans-serif;
   background: var(--bg);
   color: var(--black);
+  overflow-x: hidden;
 }
 
 a {
@@ -76,7 +78,7 @@ button {
   gap: 10px;
   font-size: 19px;
   font-weight: 900;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 .brand-icon {
@@ -169,10 +171,16 @@ button {
   align-items: center;
 }
 
+.hero-grid > *,
+.preview-card {
+  min-width: 0;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  max-width: 100%;
   padding: 10px 16px;
   margin-bottom: 26px;
   border: 1px solid var(--line);
@@ -181,15 +189,24 @@ button {
   color: #334155;
   font-size: 14px;
   font-weight: 800;
+  line-height: 1.35;
+  white-space: normal;
   box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
 }
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(48px, 7vw, 82px);
-  line-height: 0.98;
-  letter-spacing: -0.075em;
+  max-width: 620px;
+  font-size: clamp(42px, 4.6vw, 64px);
+  line-height: 1.12;
+  letter-spacing: 0;
   font-weight: 950;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.hero h1 span {
+  display: block;
 }
 
 .hero-desc {
@@ -198,7 +215,8 @@ button {
   color: var(--muted);
   font-size: 20px;
   line-height: 1.72;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .hero-buttons {
@@ -304,7 +322,8 @@ button {
 .preview-top h3 {
   margin: 0;
   font-size: 26px;
-  letter-spacing: -0.045em;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .analysis-badge {
@@ -339,7 +358,7 @@ button {
 
 .preview-stats strong {
   font-size: 17px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .ai-result {
@@ -356,7 +375,7 @@ button {
 .ai-result strong {
   display: block;
   margin-bottom: 4px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .ai-result p {
@@ -405,7 +424,7 @@ button {
 }
 
 .roadmap-title strong {
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 .roadmap-title span {
@@ -456,8 +475,9 @@ button {
   margin: 0;
   font-size: clamp(36px, 5vw, 56px);
   line-height: 1.04;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
   font-weight: 950;
+  word-break: keep-all;
 }
 
 .section-head p,
@@ -469,7 +489,8 @@ button {
   color: var(--muted);
   font-size: 18px;
   line-height: 1.75;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .mvp-grid {
@@ -516,7 +537,8 @@ button {
   margin: 22px 0 0;
   font-size: 21px;
   line-height: 1.2;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .feature-card p,
@@ -569,7 +591,8 @@ button {
   display: block;
   font-size: 22px;
   line-height: 1.28;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .dark-panel {
@@ -608,7 +631,7 @@ button {
   margin-bottom: 10px;
   font-size: 44px;
   line-height: 1;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 }
 
 .dark-stats span {
@@ -737,7 +760,8 @@ button {
 
 @media (max-width: 720px) {
   .container {
-    width: min(100% - 28px, 1180px);
+    width: calc(100% - 48px);
+    max-width: 1180px;
   }
 
   .nav {
@@ -749,8 +773,7 @@ button {
   }
 
   .nav-cta {
-    padding: 10px 14px;
-    font-size: 13px;
+    display: none;
   }
 
   .brand {
@@ -767,21 +790,47 @@ button {
     padding: 58px 0 64px;
   }
 
+  .hero-copy {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .badge {
+    justify-content: center;
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+
   .hero h1 {
-    font-size: 46px;
-    line-height: 1.04;
+    max-width: 100%;
+    font-size: 34px;
+    line-height: 1.16;
   }
 
   .hero-desc {
-    font-size: 17px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15.5px;
+    line-height: 1.65;
+    word-break: break-all;
+    overflow-wrap: break-word;
   }
 
   .btn {
     width: 100%;
+    max-width: 320px;
   }
 
   .hero-buttons {
     width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
   }
 
   .hero-tags span {
@@ -789,6 +838,9 @@ button {
   }
 
   .preview-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
     padding: 16px;
     border-radius: 26px;
   }
