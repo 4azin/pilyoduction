@@ -122,7 +122,7 @@ export default function App() {
             <div className="brand-icon">
               <Film size={20} />
             </div>
-            <span>ProdMap AI</span>
+            <span>필요덕션</span>
           </a>
 
           <nav className="nav-links">
@@ -145,7 +145,7 @@ export default function App() {
           <div className="hero-copy">
             <div className="badge">
               <Sparkles size={16} />
-              소규모 프로덕션을 위한 AI 제작 PM
+              piryoduction, 소규모 프로덕션을 위한 AI 제작 PM
             </div>
 
             <h1>
@@ -155,7 +155,7 @@ export default function App() {
             </h1>
 
             <p className="hero-desc">
-              목적, 예산, 인원, 기간만 입력하세요. ProdMap AI가 맞춤형 제작 로드맵을 제안하고,
+              목적, 예산, 인원, 기간만 입력하세요. 필요덕션이 맞춤형 제작 로드맵을 제안하고,
               그 흐름에 맞는 문서, 업무, 담당자, 마감일, 알림을 자동으로 구성합니다.
             </p>
 
@@ -235,7 +235,7 @@ export default function App() {
           <span className="section-label">CORE MVP</span>
           <h2>문서를 만들기 전에, 제작 흐름을 먼저 설계합니다.</h2>
           <p>
-            ProdMap AI의 MVP는 단순 문서 자동화가 아닙니다. 소규모 프로덕션의 프로젝트 시작 전
+            필요덕션의 MVP는 단순 문서 자동화가 아닙니다. 소규모 프로덕션의 프로젝트 시작 전
             전체 흐름을 이해하고, 그 흐름을 실행 가능한 업무와 문서로 바꾸는 데 집중합니다.
           </p>
         </div>
@@ -281,7 +281,7 @@ export default function App() {
           <h2>제작관리자가 없어도, 제작은 관리되어야 하니까.</h2>
           <p>
             한 사람이 여러 역할을 맡는 소규모 팀일수록 준비 누락과 커뮤니케이션 비용이 커집니다.
-            ProdMap AI는 로드맵을 문서, 업무, 일정, 알림으로 연결합니다.
+            필요덕션은 로드맵을 문서, 업무, 일정, 알림으로 연결합니다.
           </p>
         </div>
 
@@ -307,7 +307,7 @@ export default function App() {
             <div>
               <span className="section-label labs-label">
                 <FlaskConical size={16} />
-                PRODMAP LABS
+                PIRYODUCTION LABS
               </span>
               <h2>로드맵 이후의 제작 경험을 실험합니다.</h2>
             </div>
@@ -361,9 +361,9 @@ export default function App() {
             <div className="brand-icon small">
               <Film size={17} />
             </div>
-            <span>ProdMap AI</span>
+            <span>필요덕션</span>
           </a>
-          <p>AI production roadmap platform for small video teams.</p>
+          <p>piryoduction, AI production roadmap platform for small video teams.</p>
         </div>
       </footer>
     </main>
