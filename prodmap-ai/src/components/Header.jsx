@@ -1,4 +1,3 @@
-import React from 'react';
 import { Cpu } from 'lucide-react';
 
 export default function Header() {
@@ -13,13 +12,13 @@ export default function Header() {
         </a>
 
         <nav className="nav-links">
-          <a href="#product">Product System</a>
-          <a href="#pipeline">Document Pipeline</a>
-          <a href="#labs">Labs</a>
+          <a href="#product">운영 루프</a>
+          <a href="#pipeline">문서 파이프라인</a>
+          <a href="#labs">프로젝트 룸</a>
         </nav>
 
-        <a href="#beta" className="nav-cta">
-          베타 신청하기
+        <a href="#hero" className="nav-cta">
+          운영안 생성
         </a>
       </div>
     </header>
